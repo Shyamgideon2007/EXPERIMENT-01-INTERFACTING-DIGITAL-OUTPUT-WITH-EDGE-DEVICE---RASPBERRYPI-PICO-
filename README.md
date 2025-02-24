@@ -41,6 +41,26 @@ Connect the cathode (shorter leg) of the LED to GND (ground).
 
 ## PROGRAM (MicroPython)
 ```
+from machine import Pin
+from utime import sleep
+led1 = Pin(0, Pin.OUT)
+led2 = Pin(5, Pin.OUT)
+led3 = Pin(10, Pin.OUT)
+buzz=Pin(3,Pin.OUT)
+
+while True:
+    led1.toggle()
+    sleep(0.5)
+    buzz.toggle()
+    sleep(0.5)
+    led2.toggle()
+    sleep(0.5)
+    buzz.toggle()
+    sleep(0.5)
+    led3.toggle()
+    sleep(0.5)
+    buzz.toggle()
+    sleep(0.5)
 
 
  
@@ -51,6 +71,8 @@ Connect the cathode (shorter leg) of the LED to GND (ground).
 ````
 
 ### OUPUT  
+![Screenshot 2025-02-24 111121](https://github.com/user-attachments/assets/bb02ec93-126d-4b71-ad26-7c0b110e542c)
+
 
 
 # FIGURE -02 ADD TITILE HERE 
